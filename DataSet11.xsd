@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet11" targetNamespace="http://www.tempuri.org/DataSet11.xsd" xmlns:mstns="http://www.tempuri.org/DataSet11.xsd" xmlns="http://www.tempuri.org/DataSet11.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DataSet11" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="FTP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="ИмяПользователя" type="xs:string" minOccurs="0" />
+              <xs:element name="ИмяСоединения" type="xs:string" minOccurs="0" />
+              <xs:element name="Информация" type="xs:string" minOccurs="0" />
+              <xs:element name="Пароль" type="xs:string" minOccurs="0" />
+              <xs:element name="СерверИПорт" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FTP" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
